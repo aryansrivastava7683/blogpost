@@ -1,0 +1,55 @@
+.button1 {
+
+    color: white;
+
+    background: linear-gradient(to right, red, blue);
+    background-size: 200% 100%;
+
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.button1:hover {
+    background-position: right;
+    animation: move-bg 2s infinite;
+}
+
+.listY {
+    transition: transform 1s ease-in-out;
+  }
+  
+
+.listX:hover ~ .listY{
+    transform: translateX(210px);
+    transition: ease-in-out 1s;
+    
+}
+
+.listY:hover{
+    transform: translateX(210px);
+    transition: ease-in-out 1s;
+    
+}
+
+/* mainapp */
+.mainBd::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* .postBtn {
+    
+    
+
+    color: white;
+
+    background: linear-gradient(to right, red, blue);
+    background-size: 200% 100%;
+
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.postBtn:hover {
+    background-position: right;
+    animation: move-bg 2s infinite;
+} */
