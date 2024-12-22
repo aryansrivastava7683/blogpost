@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
     <div>
       {/* Navbar */}
       <div className="navBar hidden mx-auto bg-black text-white justify-around p-4 md:flex">
-        <a href="/home">HOME</a>
+        <a href="/">HOME</a>
         <a href="/news">NEWS</a>
         <a href="/writeups">WRITE-UPS</a>
         <a href="/about">ABOUT</a>
