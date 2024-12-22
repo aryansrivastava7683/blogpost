@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 
 
-export default function write() {
+export default function Write() {
     const [Write, setWrite] = useState([]);
 
     useEffect(() => {

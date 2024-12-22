@@ -20,8 +20,8 @@ export default function handler(req, res) {
         const fileContent = fs.readFileSync(filePath, 'utf8');
         try {
             data = JSON.parse(fileContent);
-        } catch (error) {
-            return res.status(500).json({ error: 'Error parsing JSON file' });
+        } catch {
+            console.log('An error occurred')
         }
     }
 
@@ -34,7 +34,7 @@ export default function handler(req, res) {
     try {
         fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
         return res.status(200).json({ message: `Data saved to ${pgname}.json successfully!` });
-    } catch (error) {
-        return res.status(500).json({ error: 'Error writing to JSON file' });
+    } catch{
+        console.log('An error occurred')
     }
 }

@@ -1,5 +1,6 @@
 // components/Layout.js
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 // import { toggleForm } from './writeups';
 
 const Layout = ({ children }) => {
@@ -28,11 +29,11 @@ const Layout = ({ children }) => {
     <div>
       {/* Navbar */}
       <div className="navBar hidden mx-auto bg-black text-white justify-around p-4 md:flex">
-        <a href="/">HOME</a>
-        <a href="/news">NEWS</a>
-        <a href="/writeups">WRITE-UPS</a>
-        <a href="/about">ABOUT</a>
-        <a href="/playlists">PLAYLISTS</a>
+        <Link href="/">HOME</Link>
+        <Link href="/news">NEWS</Link>
+        <Link href="/writeups">WRITE-UPS</Link>
+        {/* <a href="/about">ABOUT</a>
+        <a href="/playlists">PLAYLISTS</a> */}
         {/* <button className="postBtn w-100 px-8 rounded-xl ml-[-30px] md:rounded-lg" onClick={toggleForm}>
             POST
           </button> */}
@@ -58,19 +59,19 @@ const Layout = ({ children }) => {
           <h2 className="text-lg font-bold">Menu</h2>
           <ul className="mt-4 space-y-2">
             <li>
-              <a href="/home" className="text-blue-500 hover:underline">
+              <Link href="/home" className="text-blue-500 hover:underline">
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/news" className="text-blue-500 hover:underline">
+              <Link href="/news" className="text-blue-500 hover:underline">
                 NEWS
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/writeups" className="text-blue-500 hover:underline">
+              <Link href="/writeups" className="text-blue-500 hover:underline">
                 WRITE_UPS
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

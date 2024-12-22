@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
 
 
 
-export default function news() {
+export default function News() {
     const [news, setNews] = useState([]);
 
     useEffect(() => {
