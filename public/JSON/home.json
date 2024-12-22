@@ -1,12 +1,5 @@
 [
-  {
-    "title": "home",
-    "content": "all",
-    "timestamp": "2024-12-22T08:25:12.344Z"
-  },
-  {
-    "title": "hello",
-    "content": "hi",
-    "timestamp": "2024-12-22T08:29:23.102Z"
-  }
+    {"title": "Its our home page",
+    "content": "no content",
+    "timestamp": "2024-12-22T08:23:19.446Z"}
 ]
